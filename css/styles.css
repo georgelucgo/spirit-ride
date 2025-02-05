@@ -1,0 +1,368 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    font-family: 'Roboto';
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+}
+header{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    margin: auto;
+    align-items: center;
+    padding: 10px 20px;
+}
+header img {
+    height: 65px;
+    transform: scaleX(-1);
+}
+header a {
+    text-decoration: none;
+    color: white;
+    margin-left: 40px;
+}
+
+.links{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+main{
+    background: 
+    linear-gradient(to bottom, rgba(64, 1, 131), #7102E8) left,
+    linear-gradient(to bottom, #000000, #191919) right;
+    background-size: 51% 100%;
+    background-repeat: no-repeat;
+    height: calc(100vh - 88px);
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero img{
+    transform: scaleX(-1);
+    z-index: 1;
+}
+.hero-text{
+    position: absolute;
+    text-align: center;
+    z-index: 2;
+}
+
+.hero h1{
+    font-family: 'Roboto Mono';
+    font-size: 15em;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+
+.hero h2{
+    font-family: 'Timmana';
+    font-size: 6em;
+    color: white;
+    transform: translate(0,-50%);
+}
+
+.sobre{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #191919;
+}
+.sobre-content{
+    display: flex;
+    align-items: center;
+    max-width: 1280px;
+    padding: 8px;
+}
+.sobre img{
+    width: 526px;
+    object-fit: cover;
+    object-position: center;
+    height: 378px;
+    margin: 16px;
+}
+
+#sobre{
+    color: #6D02DF;
+    margin-bottom: 8px;
+}
+
+.sobre-text{
+    margin: 20px;
+    color: white;
+}
+
+.sobre h1{
+    margin-bottom: 16px;
+}
+
+
+.new{
+    margin: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.new-content{
+    display: flex;
+    width: 100%;
+    max-width: 1280px;
+    align-items: center;
+    justify-content: space-around;
+    gap:60px
+}
+.new-bike{
+    max-height: 450px;
+    width: 100%;
+    margin: 8px;
+}
+
+.new h1{
+    font-size: 3em;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+
+.new h2{
+    font-size: 1.5em;
+    color: #6D02DF;
+}
+
+.icon{
+    height: 30px;
+}
+
+.botao{
+    background-color: #7102E8;
+    color: white;
+    padding: 8px;
+    font-size: 0.8em;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 130px;
+    font-weight: bold;
+
+}
+
+.new button{
+    align-self: flex-end
+}
+
+.new-text{
+    display: flex;
+    font-size: 1.7em;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.new-text-content{
+    display: flex;
+    align-items: center;
+}
+
+.borda{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 2px solid #7102e8;
+    border-bottom: 2px solid #7102e8;
+}
+
+aside{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+}
+
+.aside-img{
+    max-height: 250px;
+    transform: scaleX(-1);
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+    background: #7102E8;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    background: #191919;
+}
+
+.right h1 {
+    color: white;
+}
+
+.right button{
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.anuncio-text{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+#sharp{
+    height: 304px;
+    transform: translate(-115px,0px);
+}
+
+.produtos{
+    margin: 40px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.produtos h1{
+    margin: 30px;
+    font-size: 2em;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 16px;
+    max-width: 300px;
+    border: 1px solid rgba(138, 138, 138,0.3);
+    border-radius: 8px;
+}
+
+.produto img{
+    object-fit: contain;
+    width: 100%;
+}
+
+.desconto{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.preco{
+    color: #8A8A8A;
+    text-decoration: line-through;
+}
+
+.desconto p {
+    color: #7102E8;
+}
+
+.produtos-content{
+    display: flex;
+    justify-content: center;
+    max-width: 1280px;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.produto-nome{
+    color:#7102E8;
+    text-align: justify;;
+}
+
+footer{
+    padding: 16px;
+    color: white;    
+    background: linear-gradient(to left, #7102E8 30%, #3f0182);
+    font-size: 0.7em;
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+}
+footer a, footer p{
+    font-size: 1.1em;
+    text-decoration: none;
+    color: white;
+}
+
+footer button{
+    margin-top: 16px;
+    max-width: 150px;
+    font-weight: bold;
+    padding: 8px;
+    border: 1px solid white;
+    color: white;
+    background-color: transparent;
+    border-radius: 6px;
+}
+
+footer h2{
+    margin: 16px 0 6px 0
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    max-width: 1280px;
+}
+.contato{
+    display: flex;
+}
+
+.contato p{
+    margin-bottom: 4px;
+}
+
+.contato img{
+    height: 14px;
+    margin-right: 4px;
+}
+
+.footer-bottom{
+    background-color: #191919;
+    color: white;
+}
+.footer-b-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    max-width: 1280px;
+}
+.footer-bottom h1{
+    font-weight: lighter;
+}
+#logo-footer{
+    margin-top: 4px;
+    height: 78px;
+}
+.icon-footer img{
+    height: 18px;
+} 
