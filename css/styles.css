@@ -52,6 +52,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
+    animation: fade-in-up 1s;
 }
 
 .hero img{
@@ -86,6 +87,7 @@ main{
     justify-content: center;
     background-color: #191919;
     width: 100%;
+
 }
 .sobre-content{
     display: flex;
@@ -93,7 +95,9 @@ main{
     max-width: 1280px;
     padding: 32px;
     gap: 30px;
-
+    animation: anima_scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 .sobre img{
     max-width: 100%;
@@ -125,6 +129,9 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: anima_scroll linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
 }
 
 
@@ -169,6 +176,11 @@ main{
     max-width: 130px;
     font-weight: bold;
     border: 0;
+    cursor: pointer;
+}
+button:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
 }
 
 .new button{
@@ -204,7 +216,14 @@ aside{
     width: 100%;
     height: 300px;
     max-width: 1280px;
+    transition: 1s;
 }
+
+aside:hover{
+    transform: scale(1.02);
+}
+
+
 
 .aside-img{
     width: 100%;
@@ -279,6 +298,12 @@ aside{
     max-width: 300px;
     border: 1px solid rgba(138, 138, 138,0.3);
     border-radius: 8px;
+    cursor: pointer;
+}
+
+.produto:hover{
+    transition: 0.4s;
+    transform: scale(1.05);
 }
 
 .produto img{
