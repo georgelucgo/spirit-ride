@@ -28,6 +28,10 @@ header a {
     margin-left: 40px;
 }
 
+header a:hover{
+    border-bottom: 1px solid white;
+}
+
 .links{
     display: flex;
     width: 100%;
@@ -40,10 +44,11 @@ main{
     linear-gradient(to bottom, #000000, #191919) right;
     background-size: 51% 100%;
     background-repeat: no-repeat;
-    height: calc(100vh - 88px);
+    min-height: calc(100vh - 85px);
 }
 
 .hero{
+    position:relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,6 +57,9 @@ main{
 .hero img{
     transform: scaleX(-1);
     z-index: 1;
+    max-width: 100%;
+    object-fit: contain;
+    height: 700px;
 }
 .hero-text{
     position: absolute;
@@ -76,21 +84,22 @@ main{
 .sobre{
     display: flex;
     justify-content: center;
-    width: 100%;
     background-color: #191919;
+    width: 100%;
 }
 .sobre-content{
     display: flex;
     align-items: center;
     max-width: 1280px;
-    padding: 8px;
+    padding: 32px;
+    gap: 30px;
+
 }
 .sobre img{
-    width: 526px;
+    max-width: 100%;
     object-fit: cover;
     object-position: center;
-    height: 378px;
-    margin: 16px;
+    max-height: 378px;
 }
 
 #sobre{
@@ -99,8 +108,11 @@ main{
 }
 
 .sobre-text{
-    margin: 20px;
+    flex: 1;
     color: white;
+}
+.sobre-text p{
+    text-align: justify;
 }
 
 .sobre h1{
@@ -129,7 +141,6 @@ main{
 .new-bike{
     max-height: 450px;
     width: 100%;
-    margin: 8px;
 }
 
 .new h1{
@@ -157,7 +168,7 @@ main{
     width: 100%;
     max-width: 130px;
     font-weight: bold;
-
+    border: 0;
 }
 
 .new button{
@@ -174,6 +185,7 @@ main{
 .new-text-content{
     display: flex;
     align-items: center;
+    gap: 9px;
 }
 
 .borda{
@@ -190,29 +202,36 @@ aside{
     display: flex;
     justify-content: center;
     width: 100%;
+    height: 300px;
     max-width: 1280px;
 }
 
 .aside-img{
+    width: 100%;
+    max-width: 335px;
     max-height: 250px;
     transform: scaleX(-1);
+    object-fit: contain;
 }
 
 .left{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 300px;
+    flex:1;
+    max-height: 300px;
     background: #7102E8;
 }
 .right{
     display: flex;
+    flex:1;
     align-items: center;
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: 300px;
+    max-height: 300px;
     background: #191919;
 }
 
@@ -230,24 +249,25 @@ aside{
     flex-direction: column;
     gap: 30px;
     align-items: center;
+    margin-left: 16px;
 }
 
 #sharp{
-    height: 304px;
-    transform: translate(-115px,0px);
+    position: absolute;
+    height: 302px;
+    left: 97.5%;
 }
 
 .produtos{
     margin: 40px;
     margin-bottom: 100px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 .produtos h1{
-    margin: 30px;
+    margin: 30px 0px;
     font-size: 2em;
 }
 
@@ -264,6 +284,7 @@ aside{
 .produto img{
     object-fit: contain;
     width: 100%;
+    max-height: 250px;
 }
 
 .desconto{
@@ -311,6 +332,10 @@ footer a, footer p{
     color: white;
 }
 
+footer a:hover{
+    border-bottom: 1px solid white;
+}
+
 footer button{
     margin-top: 16px;
     max-width: 150px;
@@ -320,6 +345,7 @@ footer button{
     color: white;
     background-color: transparent;
     border-radius: 6px;
+    cursor: pointer;
 }
 
 footer h2{
@@ -331,14 +357,17 @@ footer h2{
     justify-content: space-between;
     margin: auto;
     max-width: 1280px;
+    width: 100%;
+    gap: 30px;
 }
 .contato{
     display: flex;
 }
 
 .contato p{
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
+
 
 .contato img{
     height: 14px;
@@ -354,15 +383,25 @@ footer h2{
     justify-content: space-between;
     align-items: center;
     margin: auto;
+    padding: 8px 8px 3px 8px;
     max-width: 1280px;
 }
 .footer-bottom h1{
     font-weight: lighter;
+    font-size: 1.3em;
 }
 #logo-footer{
     margin-top: 4px;
-    height: 78px;
+    height: 50px;
 }
 .icon-footer img{
-    height: 18px;
+    height: 25px;
 } 
+
+
+
+
+
+
+
+

@@ -1,0 +1,276 @@
+/* Smartphones*/
+@media screen and (max-width: 480px) {
+    header {
+        font-size: 3vw;
+    }
+
+    header img {
+        height: 46px;
+    }
+
+    header a {
+        margin-left: 20px;
+    }
+
+    .hero-text {
+        font-size: 1.6vw;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .sobre-text {
+        font-size: 0.8em;
+    }
+
+    .new-content {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .new-text {
+        font-size: 1.2em;
+    }
+
+    .new-title {
+        font-size: 0.8em;
+    }
+
+    .new button {
+        align-self: center
+    }
+
+    .new {
+        margin-bottom: 50px;
+    }
+
+    aside {
+        flex-direction: column;
+    }
+
+    #sharp {
+        display: none;
+    }
+
+    .aside-img {
+        height: 200px;
+    }
+
+    .anuncio-text{
+        margin-bottom: 30px;
+    }
+    .left {
+        padding: 8px;
+    }
+
+    .right {
+        font-size: 0.8em;
+        padding: 8px;
+        flex-direction: column;
+    }
+
+
+    .produtos h1 {
+        font-size: 1.2em;
+    }
+
+    .produto {
+        font-size: 0.8em;
+    }
+
+
+    .footer {
+        width: 100%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contato p {
+        margin-bottom: 8px;
+    }
+
+    .footer-bottom h1 {
+        font-weight: lighter;
+        font-size: 1em;
+    }
+
+    #logo-footer {
+        height: 45px;
+        margin-right: 26px;
+    }
+
+    .icon-footer img {
+        height: 20px;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /*   .hero-text{
+        font-size: 1.7vw;
+    }
+*/
+
+    header img {
+        height: 46px;
+    }
+
+    header a {
+        margin-left: 20px;
+    }
+
+    .hero-text {
+        font-size: 1.6vw;
+    }
+
+    .sobre-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .sobre-text {
+        font-size: 0.8em;
+    }
+
+    .new-content {
+        flex-direction: column;
+        gap: 20px
+    }
+
+    .new-text {
+        font-size: 1.2em;
+    }
+
+    .new-title {
+        font-size: 0.8em;
+    }
+
+    .new button {
+        align-self: center
+    }
+
+    .new {
+        margin-bottom: 50px;
+    }
+    aside{
+        flex-direction: column;
+    }
+
+    #sharp {
+        display: none;
+    }
+
+    .aside-img {
+        margin-top: 8px;
+        height: 200px;
+    }
+
+    .left {
+        padding: 8px;
+    }
+
+    .right {
+        font-size: 0.8em;
+        padding: 8px;
+        flex-direction: column;
+    }
+    .anuncio-text{
+        margin-bottom: 30px;
+    }
+
+    .produtos h1 {
+        font-size: 1.2em;
+    }
+
+    .produto {
+        font-size: 0.8em;
+    }
+
+    .footer {
+        width: 100%;
+        gap: 30px;
+    }
+
+    .contato p {
+        margin-bottom: 8px;
+    }
+
+    .footer-bottom h1 {
+        font-weight: lighter;
+        font-size: 1em;
+    }
+
+    #logo-footer {
+        height: 45px;
+        margin-right: 26px;
+    }
+
+    .icon-footer img {
+        height: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1280px) {
+    body {
+        font-size: 15px;
+    }
+
+    .hero-text {
+        font-size: 1.3vw;
+    }
+
+
+    .sobre-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 16px;
+        padding: 16px;
+    }
+
+    .sobre img {
+        width: 100%;
+    }
+
+    .sobre-text {
+        max-width: 566px;
+        margin-bottom: 60px;
+    }
+
+
+    .aside-img {
+        margin-top: 8px;
+    }
+
+    #sharp {
+        left: 96.3%;
+    }
+
+
+
+    
+
+
+}
